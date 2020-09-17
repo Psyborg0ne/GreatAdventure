@@ -10,6 +10,7 @@ while running:
     if choice == '1':
         # TODO Start a new game
         print("Start")
+        cunt.clear()
 
     elif choice == '2':
         # TODO Add manual for game

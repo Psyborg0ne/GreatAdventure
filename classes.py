@@ -49,35 +49,3 @@ class Shaman(NPC):
         self.hpMult = 10
         self.mpMult = 3
         super().__init__(self.name, self.desc, self.stats, self.hpMult, self.mpMult)
-
-class Slime(NPC):
-    def __init__(self):
-        self.name = "Slime"
-        self.desc = "A sticky, jelly like creature. Looks tasty!"
-        self.stats = {'str': 1, 'agi': 1, 'int': 0}
-        self.hpMult = 10
-        self.mpMult = 0
-        super().__init__(self.name, self.desc, self.stats, self.hpMult, self.mpMult)
-
-class Wolf(NPC):
-    def __init__(self):
-        self.name = "Wolf"
-        self.desc = "A fierce creature. Ate little red riding hood's grandma."
-        self.stats = {'str': 2, 'agi': 4, 'int': 0}
-        self.hpMult = 10
-        self.mpMult = 0
-        super().__init__(self.name, self.desc, self.stats, self.hpMult, self.mpMult)
-
-
-
-hero1 = Paladin("Nikos")
-hero2 = Assasin("Orfeas")
-hero3 = Shaman("Akis")
-enemy1 = Slime()
-enemy2 = Wolf()
-
-hero1.printStats()
-hero2.printStats()
-hero3.printStats()
-enemy1.printStats()
-enemy2.printStats()

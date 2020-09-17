@@ -6,11 +6,11 @@ TERM_COLS, TERM_ROWS = shutil.get_terminal_size()
 
 # Clears the terminal
 def clear():
-    # TODO if windows ->
-    # os.system('cls')
-    # Else if linux V
-    # os.system('clear')
-    pass
+
+    if os.name == "nt":
+        os.system('cls')
+    elif os.name == "posix":
+        os.system('clear')
 
 # Print centered text in stoud
 def printc(text, end='\n'):
